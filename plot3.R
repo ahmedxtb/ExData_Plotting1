@@ -20,7 +20,7 @@ cons.Feb2007$Date_Time <- as.POSIXct(strptime(cons.Feb2007$Date_Time, format = "
 ## Plot the three graphs of Energy Sub meterings vs. Time
 
 cons.melt <- melt(cons.Feb2007, measure.vars = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
-png(file = "plot3.png", width = 480, height = 480)
+png(file = "plot3.png", width = 480, height = 480, bg = "transparent")
 with(cons.melt, plot(Date_Time, value, xlab = "", ylab = "Energy sub metering", type = "n"))
 with(subset(cons.melt, variable == "Sub_metering_1"), lines(Date_Time, value))
 with(subset(cons.melt, variable == "Sub_metering_2"), lines(Date_Time, value, col = "red"))

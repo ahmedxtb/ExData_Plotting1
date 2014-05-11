@@ -18,7 +18,7 @@ cons.Feb2007$Date_Time <- as.POSIXct(strptime(cons.Feb2007$Date_Time, format = "
 
 ## Plot four graphs in 2 x 2 format
 
-png(file = "plot4.png", width = 480, height = 480)
+png(file = "plot4.png", width = 480, height = 480, bg = "transparent")
 par(mfrow = c(2, 2))
 with(cons.Feb2007, {
     plot(Date_Time, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power")

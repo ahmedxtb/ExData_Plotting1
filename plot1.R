@@ -18,6 +18,6 @@ cons.Feb2007$Date_Time <- as.POSIXct(strptime(cons.Feb2007$Date_Time, format = "
 
 ## Plot the histogram of Global Active Power
 
-png(file ="plot1.png", width = 480, height = 480)
+png(file ="plot1.png", width = 480, height = 480, bg = "transparent")
 hist(cons.Feb2007$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
 dev.off()

@@ -18,6 +18,6 @@ cons.Feb2007$Date_Time <- as.POSIXct(strptime(cons.Feb2007$Date_Time, format = "
 
 ## Plot the graph of Global Active Power vs. Time
 
-png(file = "plot2.png", width = 480, height = 480)
+png(file = "plot2.png", width = 480, height = 480, bg = "transparent")
 plot(cons.Feb2007$Date_Time, cons.Feb2007$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 dev.off()
